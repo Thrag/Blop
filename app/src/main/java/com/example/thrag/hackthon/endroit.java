@@ -3,28 +3,31 @@ package com.example.thrag.hackthon;
 /**
  * Created by Thrag on 25/03/15.
  */
-public class endroit {
+public class Endroit {
 
-    String name;
-    String description;
-    float latitude;
-    float longitude;
-    String city;
-    String category;
-    String Address;
-    String phone;
+    private int id;
+    private String name;
+    private String description;
+    private float latitude;
+    private float longitude;
+    private String city;
+    private String category;
+    private String address;
+    private String phone;
 
     //Constructor
-    public endroit(String description, String name, float latitude, float longitude, String city, String category, String address, String phone) {
+    public Endroit(String description, String name, float latitude, float longitude, String city, String category, String address, String phone) {
         this.description = description;
         this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
         this.city = city;
         this.category = category;
-        Address = address;
+        this.address = address;
         this.phone = phone;
     }
+
+    public Endroit(){}
 
     //Getters
     public float getLatitude() {
@@ -52,12 +55,14 @@ public class endroit {
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public String getPhone() {
         return phone;
     }
+
+    public int getID() { return id; }
 
 
     //Setters
@@ -70,7 +75,7 @@ public class endroit {
     }
 
     public void setAddress(String address) {
-        Address = address;
+        this.address = address;
     }
 
     public void setCategory(String category) {
@@ -92,4 +97,7 @@ public class endroit {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void setID (int id) { this.id = id; }
+
 }
