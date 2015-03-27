@@ -129,6 +129,11 @@ public class DBHelper extends SQLiteOpenHelper
         db.close();
         return result;
 
-        //TODO SELECT ALL
+        /*TODO SELECT ALL
+        *MODIFY
+        *SELECT ALL IN A CATEGORY
+        *SELECT ALL IN A CITY
+        *SPLIT BDD*/
+
     }
 }
